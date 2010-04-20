@@ -10,7 +10,7 @@ discriminators = feature_collection(
 
 
 def get_rows():
-    datareader = csv.reader(open('bezdekIris.data'))
+    datareader = csv.reader(open('fisher_iris.txt'))
 
     for datarow in datareader:
         sepal_length, sepal_width, petal_length, petal_width = map(float, datarow[:4])
